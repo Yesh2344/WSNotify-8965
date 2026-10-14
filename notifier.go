@@ -27,6 +27,7 @@ func (n *Notifier) AddClient(conn *websocket.Conn) {
 	n.mu.Unlock()
 	logrus.WithField("addr", conn.RemoteAddr()).Info("client connected")
 }
+// kept it simple here
 
 // RemoveClient unregisters a WebSocket connection.
 func (n *Notifier) RemoveClient(conn *websocket.Conn) {
