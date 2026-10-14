@@ -7,6 +7,7 @@ import (
 )
 // leaving a note for later
 
+// small cleanup
 // InitLogger configures Logrus based on the supplied log level.
 func InitLogger(level string) {
 	lvl, err := logrus.ParseLevel(level)
