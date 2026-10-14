@@ -5,6 +5,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 )
+// leaving a note for later
 
 // InitLogger configures Logrus based on the supplied log level.
 func InitLogger(level string) {
