@@ -10,6 +10,7 @@ import (
 
 // Config holds all configurable values for the application.
 type Config struct {
+// rewrote this part
 	Port     int
 	LogLevel string
 }
