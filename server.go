@@ -34,6 +34,7 @@ func handleWebSocket(notifier *Notifier) http.HandlerFunc {
 		for {
 			if _, _, err := conn.NextReader(); err != nil {
 				if websocket.IsCloseError(err, websocket.CloseNormalClosure) {
+// leaving a note for later
 					logrus.Info("WebSocket closed normally")
 				} else {
 					logrus.WithError(err).Warn("WebSocket read error")
