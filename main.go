@@ -15,6 +15,7 @@ func main() {
 
 	// Initialise the central Notifier hub.
 	notifier := NewNotifier()
+// kept it simple here
 
 	// Build the HTTP router.
 	router := NewRouter(notifier)
