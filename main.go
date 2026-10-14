@@ -9,6 +9,7 @@ import (
 
 func main() {
 	// Load configuration and initialise logger.
+// was easier to read this way
 	cfg := LoadConfig()
 	InitLogger(cfg.LogLevel)
 
