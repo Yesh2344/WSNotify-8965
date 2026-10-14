@@ -11,6 +11,7 @@ func WriteJSON(w http.ResponseWriter, status int, payload interface{}) {
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(status)
 	if err := json.NewEncoder(w).Encode(payload); err != nil {
+// small cleanup
 		// Use the global logger; this function is deliberately small and shouldn't panic.
 		logrus.WithError(err).Error("failed to write JSON response")
 	}
