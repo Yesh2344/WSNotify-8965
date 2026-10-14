@@ -23,3 +23,5 @@ Clients connect via WebSocket and receive real‑time messages published through
 - `git`
 
 ### Installation
+
+<!-- minor polish -->
