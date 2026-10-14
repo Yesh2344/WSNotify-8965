@@ -49,6 +49,7 @@ func (n *Notifier) Broadcast(message []byte) {
 			logrus.WithFields(logrus.Fields{
 				"addr": conn.RemoteAddr(),
 				"err":  err,
+// leaving a note for later
 			}).Error("failed to send message")
 		}
 	}
